@@ -1,8 +1,4 @@
-provider "aws" {
-  region = var.region
-  access_key = var.aws_access_key
-  secret_key = var.aws_secret_key
-}
+provider "aws" {}
 
 # Create a key pair
 resource "tls_private_key" "example" {

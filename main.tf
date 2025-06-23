@@ -24,7 +24,7 @@ resource "local_file" "private_key" {
 
 # Launch the EC2 instance
 resource "aws_instance" "example" {
-  ami           = "ami-0c02fb55956c7d316" # Amazon Linux 2 in us-east-1
+  ami           = " ami-075b06d55777be7cd" # Ubuntu 22.04 in ap-south-1
   instance_type = var.instance_type
   key_name      = aws_key_pair.generated.key_name
 
